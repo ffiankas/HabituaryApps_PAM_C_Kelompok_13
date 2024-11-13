@@ -52,5 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+//penambahan fragment_trasanction (rachel)
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container_progress_bar, new ProgressBarFragment());
+        transaction.replace(R.id.fragment_container_today_habit, new TodayHabitFragment());
+        transaction.replace(R.id.fragment_container_your_goals, new YourGoalsFragment());
+        transaction.commit();
     }
 }

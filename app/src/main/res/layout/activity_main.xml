@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/add_button" />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <!-- <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvGoals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,6 +29,24 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container_today_habit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container_your_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
